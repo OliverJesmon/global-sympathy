@@ -1,0 +1,25 @@
+
+.impact-container {
+    text-align: center;
+    margin: 20px;
+  
+    margin-top: 10px;
+  }
+  
+  .impact-title {
+    font-size: 52px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  @media (max-width: 1000px) {
+    .impact-title {
+      font-size: 42px;
+    }
+  
+    
+  }
+  

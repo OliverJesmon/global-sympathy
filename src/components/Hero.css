@@ -1,0 +1,161 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+/* Label styles */
+.label1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 3.125rem;
+  font-size: 0.75rem;
+}
+
+.text-wrapper1 {
+  color: rgb(14, 193, 243);
+  font-size: 1.5rem;
+  margin-top: -93px;
+}
+
+/* Image styles */
+.img {
+  height: auto;
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  z-index: -1;
+  max-height: 791px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Main label positioning */
+.label {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+  font-size: clamp(2.5rem, 5vw, 6rem);
+  max-width: 90%;
+  width: min(590px, 100% - 2rem);
+  
+}
+
+.label .making-primary {
+  font-family: "Bebas Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  text-shadow: -0.5rem 0.25rem 0.344rem rgba(0, 0, 0, 0.25);
+}
+
+.label .text-wrapper {
+  color: #ffffff;
+  z-index: 100;
+}
+
+.label .span {
+  color: #00a0e3;
+}
+
+/* Typography */
+.making-primary {
+  color: #3d3737;
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(6rem, 2vw, 2rem);
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 0 1rem;
+  margin-top: 700px;
+  right: 50px;
+  text-align: right;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 1.25rem;
+  padding: 0 1rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .hero-main {
+    width: 100%;
+  }
+  .label {
+    position: absolute;
+    top: 0%;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    font-size: clamp(1.5rem, 3vw, 6rem);
+    max-width: 90%;
+   
+  }
+
+  .img {
+    height: 50vh;
+    min-height: 400px;
+  }
+  .making-primary {
+    color: #3d3737;
+    font-family: "Raleway", sans-serif;
+    font-size: clamp(5rem, 2vw, 1.5rem);
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0 20px;
+    margin-top: -500px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* Image styles */
+  
+  .label .making-primary {
+    font-family: "Bebas Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    margin-left: 150px;
+    text-shadow: -0.5rem 0.25rem 0.344rem rgba(0, 0, 0, 0.25);
+  }
+  
+  .label .text-wrapper {
+    font-size: 40px;
+    color: #ffffff;
+    z-index: 100;
+  }
+  
+  .label .span {
+    font-size: 40px;
+    color: #00a0e3;
+  }
+  
+  /* Typography */
+  .making-primary {
+    color: #3d3737;
+    font-family: "Raleway", sans-serif;
+    font-size: clamp(6rem, 2vw, 2rem);
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0 1rem;
+    margin-top: 700px;
+    /* right: 50px; */
+    text-align: left;
+  }
+  
+  h2 {
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 1.25rem;
+    padding: 0 1rem;
+  }
+}

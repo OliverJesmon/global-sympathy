@@ -1,0 +1,166 @@
+/* Main container */
+.core-objectives {
+  max-width: 100%;
+  margin: auto;
+  padding: 30px;
+}
+
+/* Section titles */
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Categories container */
+.Categories-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px 110px;
+}
+
+/* Individual category card */
+.category-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.category-icon {
+  cursor: pointer;
+  width: 160px;
+  height: auto;
+}
+
+.category-content {
+  cursor: pointer;
+  flex: 1;
+}
+
+.category-title {
+  
+  font-weight: bold;
+  font-family: "Bebas Neue", serif;
+}
+
+.category-description {
+  text-align: left;
+  color: #555;
+  line-height: 23px;
+  font-size: 20px;
+}
+
+/* Sustainable Development Goals section */
+.sdg-section {
+  text-align: center;
+  margin: 52px;
+}
+
+
+
+.sdg-subtitle {
+  font-size: 35px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sdg-container {
+  display: flex;
+  /* grid-template-columns: repeat(3, 1fr); */
+  
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 240px;
+}
+
+.sdg-card {
+  border-radius: 50px;
+  padding: 10px;
+  width: 150px;
+  height: auto;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sdg-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 1000px) {
+  .core-objectives {
+    width: 100%;
+    /* margin: auto; */
+
+    /* padding: 30px; */
+  }
+
+  .Categories-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: -30px;
+
+  }
+
+  .categories-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* margin: 10px; */
+  }
+
+  .category-card {
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 50px; */
+  }
+
+  .category-icon {
+    width: 170px;
+  }
+
+  .category-title {
+    text-align: center;
+    font-size: 34px;
+  }
+
+  .category-description {
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .sdg-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px;
+  }
+
+  .sdg-card {
+    width: 100%;
+  }
+
+  .sdg-icon {
+    width: 150px;
+    height: 150px;
+  }
+
+  .sdg-title,
+  .sdg-subtitle {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}

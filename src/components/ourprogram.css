@@ -1,0 +1,85 @@
+/* Import Google Font: Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.programs-container {
+    width: 70%; /* Adjust width for better layout */
+    margin: auto;
+    /* padding: 10px; */
+    text-align: center;
+    font-size: 28px;
+}
+
+.programs-title {
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Bebus Neue;
+    text-transform: uppercase;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+
+/* Ordered List (Numbered) */
+.programs-list {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    line-height: 1.5;
+    text-align: left;
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: decimal; 
+    text-align: left; 
+    /* width: 80%;  */
+   
+}
+
+/* List Item Styling */
+.programs-list li {
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+@media (max-width: 1000px){
+    .programs-container {
+        width: 100%; /* Adjust width for better layout */
+        padding: 40px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .programs-title {
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 700;
+        font-family: Bebus Neue;
+        text-transform: uppercase;
+        color: #222;
+        margin-bottom: 15px;
+    }
+    
+    
+    /* Ordered List (Numbered) */
+    .programs-list {
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'Raleway', sans-serif;
+        color: #333;
+        line-height: 1.5;
+        text-align: left;
+        padding: 0;
+        margin: 0 auto;
+        list-style-type: decimal; 
+        text-align: left; 
+        /* width: 80%;  */
+       
+    }
+    
+    /* List Item Styling */
+    .programs-list li {
+        margin: 10px 0;
+        padding: 5px 0;
+    }
+}

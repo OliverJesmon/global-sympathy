@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.contact-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2vw 4vw;
+}
+
+.contact-title {
+  font-size: 68px;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  font-weight: bold;
+}
+
+.contact-content {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.address-section,
+.contact-details {
+  margin-bottom: 30px;
+}
+
+.address-section h3,
+.contact-details h3 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.address-section p,
+.contact-details p {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Raleway;
+  line-height: 1.6;
+  color: #534D4D;
+  padding-left: 7vw;
+}
+
+.helpdesk-section {
+  flex: 1;
+}
+
+.helpdesk-title {
+  font-size: 48px;
+  color: #534D4D;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-left: -20px;
+}
+
+.helpdesk-subtitle {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form-field input,
+.form-field textarea {
+  padding: 10px;
+  outline: none;
+  border: 1px solid #000000;
+  font-size: 16px;
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-button {
+  background-color: #00A0E3;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #0088c3;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .contact-title {
+    font-size: 36px;
+  }
+
+  .helpdesk-title {
+    font-size: 20px;
+  }
+}

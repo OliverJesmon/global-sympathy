@@ -1,0 +1,80 @@
+.gender-justice-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 8vw;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.gender-justice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row for laptop */
+    gap: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* CSR Section */
+.csr-section {
+    padding: 5vw 4vw;
+  }
+  
+  .csr-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .support-donate-button.large {
+    width: 256px;
+    height: 68px;
+    border-radius: 16px;
+    font-size: 24px;
+    line-height: 28.18px;
+  }
+  
+  .csr-info {
+    width: 50%;
+    text-align: start;
+    margin-top: -25px;
+    line-height: 40px;
+  }
+  
+  .csr-title {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  
+  .csr-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  .csr-email {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+@media (max-width: 768px) {
+    .gender-justice-grid {
+        grid-template-columns: 1fr; /* 1 image per row for mobile */
+        margin:20px;
+    }
+
+    .grid-item {
+        width: 100%; /* Ensures full width */
+    }
+
+    .grid-item img {
+        width: 100%; /* Ensures images take full width */
+        height: auto; /* Maintains aspect ratio */
+    }
+}
