@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './Pages/Home';
 import About from './Pages/About';
-
+import ScrollToTop from './components/ScrollToTop';
 import Media from './Pages/Media';
 import Gallery from './Pages/Gallery';
 import Contact from './Pages/Contact';
@@ -23,10 +23,13 @@ import Edu from './Pages/Edu';
 import RuralDev from './Pages/Ruraldev';
 
 function App() {
+  
   return (
     <div className="App">
       <Navbar/>
+      <ScrollToTop />
       <Routes>
+        
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/ruraldevelopment' element={<Rural/>}/>
