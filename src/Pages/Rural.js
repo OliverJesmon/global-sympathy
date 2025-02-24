@@ -1,3 +1,4 @@
+import CSR from "../components/CSR"
 import Hero from "../components/Hero"
 import Impact from "../components/Impact"
 // import "../Rural.css"
@@ -13,32 +14,7 @@ function Rural() {
     <Hero text1="RESPONDING TO THE CALL OF HUMANITY" img={Children} />
     <Impact />
     <Workinfo title="Rural Development" para1={Para1} para3={Para2} para4={Para3}/>
-    <div className="content-section">
-        {/* <div className="left-content">
-          <a href="/" className="donate-button">
-            DONATE FOR EDUCATION
-          </a>
-        </div>
-        <div className="right-content">
-           <h2>FOR CSR SUPPORT</h2>
-           <p className="write-to">Write To</p>
-           <p className="csr-contact">
-           <strong>Rons Bantwal At </strong>
-           <a href="mailto:gsfindias25@gmail.com">gsfindias25@gmail.com</a>
-         </p>
-     
-         </div> */}
-            </div>
-            <section className="csr-section">
-        <div className="csr-content">
-          <button className="support-donate-button large">DONATE NOW</button>
-          <div className="csr-info">
-            <p className="csr-title">FOR CSR SUPPORT</p>
-            <p className="csr-subtitle">Write To</p>
-            <p className="csr-email">Rons Bantwal A gsfindia25@gmail.com</p>
-          </div>
-        </div>
-      </section>
+    <CSR title="Donate For Rural Development"/>
     </>
   )
 }

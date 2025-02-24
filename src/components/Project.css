@@ -57,12 +57,12 @@
         /* max-width: 800px; */
         /* margin: 40px auto;
         text-align: center; */
-        line-height: 1;
+        line-height: 10px;
         font-family: Raleway;
     }
     
     .impact-title {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: bold;
         color: #333;
         text-align: center;
@@ -72,7 +72,7 @@
     }
     
     .impact-text {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
         color: #3D3737;
         margin-bottom: 20px;
@@ -90,12 +90,12 @@
     
     .impact-list li {
         font-size: 16px;
+        line-height: 15px;
         color: #3D3737;
         /* padding: 8px 0;  */
     }
     .impact-footer {
-        
-       font-size: 20px;
+       font-size: 18px;
         margin-top: 20px;
         line-height: 25px;
         text-align: left; 

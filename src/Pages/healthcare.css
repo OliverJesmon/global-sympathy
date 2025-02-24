@@ -41,44 +41,6 @@
     width: auto;
     height: auto;
 }
-.csr-section {
-    padding: 5vw 4vw;
-  }
-  
-  .csr-content {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .support-donate-button.large {
-    width: 256px;
-    height: 68px;
-    border-radius: 16px;
-    font-size: 24px;
-    line-height: 28.18px;
-  }
-  
-  .csr-info {
-    width: 50%;
-    text-align: start;
-    margin-top: -25px;
-    line-height: 40px;
-  }
-  
-  .csr-title {
-    font-size: 40px;
-    font-weight: 600;
-  }
-  
-  .csr-subtitle {
-    font-size: 24px;
-    font-weight: 400;
-  }
-  
-  .csr-email {
-    font-size: 28px;
-    font-weight: 600;
-  }
 
 /* Responsive styles for mobile */
 @media (max-width: 768px) {

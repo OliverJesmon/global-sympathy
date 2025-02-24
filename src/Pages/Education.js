@@ -3,6 +3,7 @@ import Impact from "../components/Impact";
 import Workinfo from "../components/Workinfo";
 import EducationPic from '../images/educationalsupport.png';
 
+import CSR from "../components/CSR";
 import "../components/styles/Education.css";
 
 export default function Education() {
@@ -27,14 +28,7 @@ export default function Education() {
       <div className="education-support-container">
         {/* Image Section */}
         <img src={EducationPic} alt="Educational Support Visual" className="education-support-image" />
-        <div className="csr-content">
-          <button className="support-donate-button large">DONATE FOR EDUCATION</button>
-          <div className="csr-info">
-            <p className="csr-title">FOR CSR SUPPORT</p>
-            <p className="csr-subtitle">Write To</p>
-            <p className="csr-email">Rons Bantwal A gsfindia25@gmail.com</p>
-          </div>
-        </div>
+        <CSR title="Donate For Education"/>
       </div>
     </>
     

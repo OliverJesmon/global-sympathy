@@ -80,6 +80,15 @@
     line-height: 1.5;
   }
 
+  .objective-container{
+      max-width: "85%";
+      padding: "20px 14px";
+      text-align: "justify";
+      color: "#333";
+      font-family: "Arial, sans-serif";
+      margin-left: "6.25rem";
+  }
+
 @media (max-width: 1000px){
   .vision-mission-container {
     display: flex;
@@ -92,14 +101,19 @@
     /* gap: 20px; */
     
   }
+  .objective-container{
+    /* width: 100%; */
+    margin: 0;
+    padding: 20px;
+  }
   .section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     /* padding: 20px; */
-    /* margin-left: 75px; */
+    margin-left: 20px;
   }
   .our-vision-mission-title{
     display: flex;
@@ -128,10 +142,15 @@
     width: 100%;
     padding: 20px;
     font-size: 14px;
-    text-align: justify;
-  }
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
   .trustee-person-image{
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
   }

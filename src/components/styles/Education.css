@@ -59,6 +59,23 @@
     margin: 0 auto;
 }
 
+
+
+.education-donate-button.large {
+    width: 60vw;
+    height: 68px;
+    border: none;
+    color: white;
+    background-color: #00A0E3;
+    padding: 2px 10px;
+    border-radius: 16px;
+    font-size: 18px;
+    margin-left: 70px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    line-height: 28.18px;
+  }
+
 /* Image Styling */
 .education-support-image {
     width: 100%;
@@ -101,4 +118,43 @@
         align-items: center;
         text-align: center;
     }
+
+    .csr-section {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      
+      .csr-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+    .education-donate-button.large {
+        width: 60vw;
+        height: 68px;
+        border: none;
+        color: white;
+        background-color: #00A0E3;
+        padding: 2px 10px;
+        border-radius: 16px;
+        font-size: 18px;
+        margin-left: 70px;
+        margin-top: -30px;
+        margin-bottom: 30px;
+        line-height: 28.18px;
+      }
+      .education.info{
+        height: auto;
+        width: 90%;
+        padding: 2vw;
+        background-color: red;
+      }
+      .csr-education.info p{
+        font-size: 20px;
+      }
+      .csr-education.title{
+        font-size: 14px;
+      }
 }

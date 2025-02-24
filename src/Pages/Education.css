@@ -30,100 +30,10 @@
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* CSR Section */
-.csr-section {
-  padding: 5vw 4vw;
- 
-}
-
-.csr-content {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 60px;
-}
-
-.support-donate-button.large {
-  width: 256px;
-  height: 68px;
-  border-radius: 16px;
-  font-size: 24px;
-  line-height: 28.18px;
-}
-
-.csr-info {
-  width: 50%;
-  text-align: start;
-  margin-top: -25px;
-  line-height: 40px;
-}
-
-.csr-title {
-  font-size: 40px;
-  font-weight: 600;
-}
-
-.csr-subtitle {
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.csr-email {
-  font-size: 28px;
-  font-weight: 600;
-}
 /* Mobile View: 1 image per row */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .grid-layout {
       grid-template-columns: 1fr; /* 1 image per row on mobile */
       margin:10px;
   }
-
-  .education-container {
-    width: 100%;
-    grid-column: span 1;
-}
-.csr-section {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.csr-content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.support-donate-button.large {
-  /* width: 150px; */
-  height: 50px;
-  border-radius: 16px;
-  font-size: 20px;
-  line-height: 28.18px;
-  margin-bottom: 20px;
-  /* margin-left:-140px; */
-}
-
-.csr-info {
-  width: 50%;
-  text-align: start;
-  margin-top: -25px;
-  line-height: 40px;
-}
-
-.csr-title {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.csr-subtitle {
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.csr-email {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-}
 }

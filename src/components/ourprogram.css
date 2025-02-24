@@ -52,7 +52,7 @@
     
     .programs-title {
         justify-content: center;
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 700;
         font-family: Bebus Neue;
         text-transform: uppercase;
@@ -63,7 +63,7 @@
     
     /* Ordered List (Numbered) */
     .programs-list {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 400;
         font-family: 'Raleway', sans-serif;
         color: #333;
@@ -79,6 +79,7 @@
     
     /* List Item Styling */
     .programs-list li {
+        font-size: 18px;
         margin: 10px 0;
         padding: 5px 0;
     }

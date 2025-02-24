@@ -1,5 +1,6 @@
 // Support.jsx
 import React from "react";
+import CSR from "../components/CSR";
 import img1 from "../images/img1.png";
 import img2 from "../images/img2.png";
 import img3 from "../images/img3.png";
@@ -99,17 +100,7 @@ function Support() {
           ))}
         </div>
       </section>
-      
-      <section className="csr-section">
-        <div className="csr-content">
-          <button className="support-donate-button large">DONATE NOW</button>
-          <div className="csr-info">
-            <p className="csr-title">FOR CSR SUPPORT</p>
-            <p className="csr-subtitle">Write To</p>
-            <p className="csr-email">Rons Bantwal A gsfindia25@gmail.com</p>
-          </div>
-        </div>
-      </section>
+      <CSR title="Donate Now"/>
     </div>
   );
 }
