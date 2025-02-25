@@ -1,11 +1,6 @@
 /* Reset default margin and ensure consistent box-sizing */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* Container for text content */
 .workinfo-container {
@@ -25,7 +20,7 @@
     font-family: 'Bebas Neue', sans-serif;
     margin-top: 20px;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     width: 1200px; /* Matches paragraph width */
   
     padding-bottom: 5px;

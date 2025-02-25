@@ -1,19 +1,21 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import "./Project.css"; // Import external CSS file
 import Vision from "../images/logo/culturalpresv.jpeg";
 import Mision from "../images/logo/genderjustice.jpg";
 import Ron from "../images/normal/Ron.jpg";
 import Tara from "../images/normal/Tara.jpg";
-import "./Trustee.css";
-function Objectives() {
+import "./Aboutcomponent.css";
+function Aboutcomponent() {
   const [isMobile, setIsMobile] = useState(false);
-
+  const ourProgram=useRef(null);
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.matchMedia("(max-width: 1000px)").matches);
+    const checkMobile = () =>
+      setIsMobile(window.matchMedia("(max-width: 1000px)").matches);
     checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
-
+  
   return (
     <>
       <div className="vision-mission-container">
@@ -44,7 +46,10 @@ function Objectives() {
           </div>
         </div>
       </div>
-      <div className="objective-container" style={{ margin: isMobile ? 0 : 80, padding: isMobile ? 40 : 0 }} >
+      <div
+        className="objective-container"
+        style={{ margin: isMobile ? 0 : 80, padding: isMobile ? 40 : 0 }}
+      >
         <center>
           <h2>OUR CORE OBJECTIVES</h2>
         </center>
@@ -78,6 +83,8 @@ function Objectives() {
           </p>
         </div>
       </div>
+      <div>
+
       <div className="trustees">
         <h2>OUR TRUSTEES</h2>
         <div className="trustee-container">
@@ -102,11 +109,12 @@ function Objectives() {
                 src={Tara}
                 alt="Mrs. Jacintha Tara D’Cunha (Tara Bantwal)"
                 className="trustee-image"
-              />
+                />
               <h3 className="trustee-name">
                 MRS. JACINTHA TARA D’CUNHA (TARA BANTWAL)
               </h3>
             </div>
+            
             <p className="trustee-title">Trustee</p>
             <p className="trustee-description">
               Mrs. Tara Bantwal Is A Compassionate Leader Who Actively Supports
@@ -114,24 +122,104 @@ function Objectives() {
               Believes In Empowering The Underprivileged And Fostering A Sense
               Of Community Through Her Work With GSF.
             </p>
+            </div>
+                </div>
+            <div>
+
+            <div className="impact-container">
+              <h2 className="impact-title">OUR IMPACT</h2>
+              <p className="impact-text">
+                For over two and a half decades, GSF has been at the forefront
+                of social development, focusing on:
+              </p>
+
+              <ul className="impact-list">
+                <li>-Poverty Alleviation</li>
+                <br />
+                <li>-Education For The Underprivileged</li>
+                <br />
+                <li>-Child Protection And Women’s Empowerment</li>
+                <br />
+                <li>-Disaster Risk Management And Relief</li>
+                <br />
+                <li>-Water And Sanitation Initiatives</li>
+                <br />
+                <li>-Gender Justice And Social Welfare</li>
+                <br />
+              </ul>
+              <p className="impact-footer">
+                Through strategic partnerships and community-driven projects, we
+                have positively impacted countless lives across India.
+              </p>
+            </div>
+            <div className="programs-container" ref={ourProgram}>
+              <h2 className="programs-title">OUR PROGRAMS</h2>
+              <ol className="programs-list">
+                <li>
+                  Education For All: Scholarships, Educational Materials, And
+                  Training Programs For Underprivileged Students.
+                </li>
+                <li>
+                  Healthcare Initiatives: Free Medical Camps, Ambulance
+                  Services, And Support For Hospitals And Dispensaries.
+                </li>
+                <li>
+                  Disaster Relief: Emergency Response Teams Providing Food,
+                  Clothing, And Shelter During Natural Calamities.
+                </li>
+                <li>
+                  Rural Development: Infrastructure Projects, Skill Development,
+                  And Employment Generation In Rural Areas.
+                </li>
+                <li>
+                  Women And Child Welfare: Empowerment Programs, Vocational
+                  Training, And Healthcare Support.
+                </li>
+                <li>
+                  Cultural Preservation: Promoting Indian Culture, Heritage, And
+                  Spiritual Values Through Workshops And Events.
+                </li>
+              </ol>
+            </div>
+            <div className="gi-container">
+              <h2 className="gi-title">GET INVOLVED</h2>
+              <p className="text">
+                Join us in our mission to create a better world. Here's how you
+                can help:
+              </p>
+              <p className="text">
+                <strong>Donate:</strong> Your contributions can make a
+                difference.
+              </p>
+              <p className="text">
+                <strong>Volunteer:</strong> Share your time and skills.
+              </p>
+              <p className="text">
+                <strong>Partner:</strong> Collaborate with us.
+              </p>
+              <p className="text">
+                Donations are tax-exempt under Section 80G of the Income Tax
+                Act.
+              </p>
+            </div>
+            </div>
           </div>
         </div>
-      </div>
+      
     </>
   );
 }
-
-export default Objectives;
+export default Aboutcomponent;
 
 const styles = {
   title: {
     textAlign: "center",
     fontSize: "20px",
     fontWeight: "bold",
-    margin: "20px",
+    
   },
   content: {
-    margin: "20px",
+    margin: "20px 0",
     fontSize: "24px",
     lineHeight: "1.6",
   },

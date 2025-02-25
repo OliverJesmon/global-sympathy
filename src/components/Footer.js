@@ -1,6 +1,8 @@
+
 // Footer.jsx
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
 import logo from "../images/logo.png";
 import "./Footer.css";
 
@@ -19,9 +21,18 @@ export default function Footer() {
           </div>
 
           <div className="footer-links-container">
-            
-
-            <div className="footer-column">
+          <div className="footer-column">
+          <h4 className="footer-heading">ABOUT US</h4>
+          <div className="footer-links">
+            <p><Link to='/about' className="footer-link">About</Link></p>
+            <p><Link to='/about#ourimpact' className="footer-link">Impact</Link></p>
+            <p><Link to='/about#culturalpreserve' className="footer-link">Our Story</Link></p>
+            <p><Link to='/about#Coreobjectives' className="footer-link">Our Core Objectives </Link></p>
+            <p><Link to='/about#ourprogram' className="footer-link">Our Programs</Link></p>
+            <p><Link to='/about#GetInvolved' className="footer-link">Get Involved</Link></p>
+          </div>
+          </div>
+          <div className="footer-column">
               <h4 className="footer-heading">OUR WORK</h4>
               <div className="footer-links">
                 <p><Link to='/education' className="footer-link">Education</Link></p>
@@ -29,10 +40,11 @@ export default function Footer() {
                 <p><Link to='/culturalpreserve' className="footer-link">Cultural Preservation</Link></p>
                 <p><Link to='/genderjustice' className="footer-link">Gender Justice</Link></p>
                 <p><Link to='/disaster' className="footer-link">Disaster Relief</Link></p>
-              </div>
             </div>
           </div>
         </div>
+        </div>
+     
 
         <div className="footer-bottom">
           <address className="footer-address">

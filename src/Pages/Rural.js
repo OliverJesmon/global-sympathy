@@ -1,7 +1,7 @@
 import CSR from "../components/CSR"
 import Hero from "../components/Hero"
 import Impact from "../components/Impact"
-// import "../Rural.css"
+import "./Rural.css"
 import Workinfo from "../components/Workinfo"
 import Children from "../images/children.png"
 

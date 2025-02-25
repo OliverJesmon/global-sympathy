@@ -1,17 +1,15 @@
 .info-container {
     width: 100%;
     margin-top: -40px;
-    max-width: 1200px;
-    /* margin: 0 auto; */
-    padding: 48px 20px;
-    box-sizing: border-box;
-  }
-  
-  .info-content {
     max-width: 100%;
     margin: 0 auto;
-    padding: 2vw;
-    padding-left: 9vw;
+    padding: 100px 120px;
+    box-sizing: border-box;
+  }
+
+  .info-content {
+    max-width: 100%;
+    
     text-align: center;
   }
   

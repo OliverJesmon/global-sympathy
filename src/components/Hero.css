@@ -17,6 +17,7 @@
   color: rgb(14, 193, 243);
   font-size: 1.5rem;
   margin-top: -93px;
+  
 }
 
 /* Image styles */
@@ -75,15 +76,18 @@
   right: 50px;
   text-align: right;
 }
+h2{
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  margin-top: 40px;}
 
-h2 {
+/* h2 {
   font-size: clamp(2rem, 4vw, 3.25rem);
   font-family: "Bebas Neue", sans-serif;
-  font-weight: bold;
+
   margin-top: 40px;
   margin-bottom: 1.25rem;
   padding: 0 1rem;
-}
+} */
 
 /* Media Queries */
 @media screen and (max-width: 768px) {

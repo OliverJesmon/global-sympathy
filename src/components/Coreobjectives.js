@@ -1,3 +1,5 @@
+
+/*core objective js*/ 
 import React from "react";
 import Cultural from "../images/logo/culturalpresv.jpeg";
 import decentwork from "../images/logo/decent.jpeg";
@@ -15,12 +17,12 @@ import "./Coreobjectives.css";
 import { useNavigate } from "react-router-dom";
 
 const categories = [
-  { title: "EDUCATION", description: "Provide educational opportunities for underprivileged students.", icon: Education, color: "orange", link: '/education' },
-  { title: "HEALTHCARE", description: "Offer medical relief through hospitals and dispensaries.", icon: Healthcare, color: "purple", link: '/healthcare' },
-  { title: "CULTURAL PRESERVATION", description: "Promote and preserve India's rich cultural heritage.", icon: Cultural, color: "lightblue", link: '/culturalpreserve' },
-  { title: "GENDER JUSTICE", description: "Empower women and children through education and healthcare.", icon: Gender, color: "lightcoral", link: '/genderjustice' },
-  { title: "RURAL DEVELOPMENT", description: "Improve living conditions in rural communities.", icon: Rural, color: "green", link: '/ruraldevelopment' },
-  { title: "DISASTER RESPONSE", description: "Provide immediate assistance during natural calamities.", icon: Disaster, color: "red", link: '/disaster' }
+  { title: "EDUCATION", description: "Provide educational opportunities for underprivileged students.", icon: Education, color: "#F0C675", link: '/education' },
+  { title: "HEALTHCARE", description: "Offer medical relief through hospitals and dispensaries.", icon: Healthcare, color: "#C1ACCC", link: '/healthcare' },
+  { title: "CULTURAL PRESERVATION", description: "Promote and preserve India's rich cultural heritage.", icon: Cultural, color: "#B3D3D2", link: '/culturalpreserve' },
+  { title: "GENDER JUSTICE", description: "Empower women and children through education and healthcare.", icon: Gender, color: "#DFC0AF", link: '/genderjustice' },
+  { title: "RURAL DEVELOPMENT", description: "Improve living conditions in rural communities.", icon: Rural, color: "#51C777", link: '/ruraldevelopment' },
+  { title: "DISASTER RESPONSE", description: "Provide immediate assistance during natural calamities.", icon: Disaster, color: "#FB8071", link: '/disaster' }
 ];
 
 const Coreobjectives = () => {

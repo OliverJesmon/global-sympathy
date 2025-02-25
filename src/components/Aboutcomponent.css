@@ -1,0 +1,408 @@
+.gi-container {
+    /* margin: 20px; */
+    padding: 20px 120px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .gi-title {
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 15px;
+      font-weight: 400;
+      font-family: 'Bebus Neue';
+    }
+  
+  .text {
+    font-size: 24px;
+    color: #444;
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .gi-title {
+      font-size: 30px;
+      font-weight: 400;
+      font-family: 'Bebus Neue';
+    }
+  
+    .text {
+      font-size: 24px;
+    }
+  }
+  
+
+
+  .impact-container {
+    text-align: center;
+    margin: 20px;
+  
+    margin-top: 10px;
+  }
+  
+  .impact-title {
+    font-size: 52px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  @media (max-width: 1000px) {
+    .impact-title {
+      font-size: 42px;
+    }
+  
+    
+  }
+
+
+
+  
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.programs-container {
+    width: full; /* Adjust width for better layout */
+    /* margin: 20px; */
+    padding: 20px 120px;
+    /* padding: 10px; */
+    text-align: center;
+    font-size: 28px;
+}
+
+.programs-title {
+    justify-content: center;
+    font-size: 52px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+
+/* Ordered List (Numbered) */
+.programs-list {
+    font-size: 28px;
+    color: #333;
+    text-align: left; 
+    width: 100%; 
+   
+}
+
+/* List Item Styling */
+.programs-list li {
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+@media (max-width: 728px){
+    .programs-container {
+        width: 100%; /* Adjust width for better layout */
+        /* padding: 40px; */
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .programs-title {
+        justify-content: center;
+        font-size: 52px;
+        font-weight: 400;
+        font-family: Bebus Neue;
+        text-transform: uppercase;
+        color: #222;
+        margin-bottom: 15px;
+    }
+    
+    
+    /* Ordered List (Numbered) */
+    .programs-list {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Raleway', sans-serif;
+        color: #333;
+        line-height: 1.5;
+        text-align: left;
+        padding: 0;
+        margin: 0 auto;
+        list-style-type: decimal; 
+        text-align: left; 
+        /* width: 80%;  */
+       
+    }
+    
+    /* List Item Styling */
+    .programs-list li {
+        font-size: 18px;
+        margin: 10px 0;
+        padding:5px ;
+    }
+}
+  
+
+
+
+.vision-mission-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 0;
+    padding: 0 120px;
+    align-items: flex-start;
+    text-align: left;
+    font-family: Raleway;
+    gap: 130px;
+    
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    
+    width: 100%;
+    
+    /* padding: 20px; */
+    /* margin-left: 75px; */
+  }
+  .our-vision-mission-title{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .icon{
+    height: 100px;
+    width: 100px;
+  }
+  .trustees {
+    margin-top: 40px;
+    text-align: center;
+    
+  }
+  
+  .trustee-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 2vw 120px;
+    margin-top: 20px;
+  }
+  
+  .trustee {
+    width: 100%;
+    font-size: 16px;
+    text-align: justify;
+  }
+  .trustee-person-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .trustee-image {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .trustee-name {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px;
+   
+  }
+  
+  .trustee-title {
+    font-style: italic;
+    font-size: 26px;
+    margin-bottom: 10px;
+ 
+  }
+  
+  .trustee-description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .objective-container{
+      max-width: 100%;
+      padding: 20px 120px !important;
+      text-align: justify;
+      color: #333;
+      margin: 0 !important;
+  }
+
+@media (max-width: 1000px){
+  .vision-mission-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 -40px;
+    align-items: center;
+    text-align: left;
+    font-family: Raleway;
+    /* gap: 20px; */
+    
+  }
+  .objective-container{
+    /* width: 100%; */
+    margin: 0;
+    padding: 20px;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    /* padding: 20px; */
+    margin-left: 20px;
+  }
+  .our-vision-mission-title{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .icon{
+    height: 100px;
+    width: 100px;
+  }
+  .trustees {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .trustee-container {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .trustee {
+    width: 100%;
+    padding: 20px;
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  .trustee-person-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .trustee-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .trustee-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .trustee-title {
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 10px;
+ 
+  }
+  
+  .trustee-description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: justify;
+  }
+
+}
+
+
+.programs-title {
+  justify-content: center;
+  font-size: 52px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+
+/* Ordered List (Numbered) */
+.programs-list {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: Raleway, sans-serif;
+  color: #333;
+  line-height: 1.5;
+ 
+  width: 100%; 
+  text-align: justify;
+}
+
+/* List Item Styling */
+.programs-list li {
+  margin: 10px 0;
+  padding: 5px 0;
+  
+}
+
+@media (max-width: 728px){
+  .programs-container {
+      width: 100%; /* Adjust width for better layout */
+      /* padding: 40px; */
+      text-align: center;
+      font-size: 20px;
+  }
+  
+  .programs-title {
+      justify-content: center;
+      font-size: 52px;
+      font-weight: 400;
+      font-family: Bebus Neue;
+      text-transform: uppercase;
+      color: #222;
+      margin-bottom: 15px;
+  }
+  
+  
+  /* Ordered List (Numbered) */
+  .programs-list {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: 'Raleway', sans-serif;
+      color: #333;
+      line-height: 1.5;
+      text-align: left;
+      padding: 0;
+      margin: 0 auto;
+      list-style-type: decimal; 
+      text-align: left; 
+      /* width: 80%;  */
+     
+  }
+  
+  /* List Item Styling */
+  .programs-list li {
+      font-size: 18px;
+      margin: 10px 0;
+      padding:5px ;
+      align-items: center;
+  }
+}

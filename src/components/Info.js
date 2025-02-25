@@ -4,7 +4,9 @@ import './Info.css';
 function Info() {
   return (
     <div className="info-container">
+      
       <div className="info-content">
+      
         <p className="info-text">
           Global Sympathy Foundation ® (GSF) is a non-governmental charitable 
           organization registered as a public trust in Mumbai, India. Established 

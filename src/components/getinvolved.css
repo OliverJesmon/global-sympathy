@@ -1,111 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 
-.get-involved-container {
-  /* display: flex; */
-  font-family: "Raleway";
-  padding: 10px;
-  /* min-height: 50vh; */
-  background-color: #ffffff;
-  padding: 15px;
-  font-size: 28px;
-  width: 100%;
-}
 
-.get-involved-box {
-  /* max-width: 700px; */
-  /* text-align: left; */
-  width: 100%;
-  font-family: "Raleway", sans-serif;
-  color: #333;
-  /* height: 297px; */
-  margin-bottom: 70px;
-}
 
-.get-involved-title {
- display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Bebas Neue;
+
+.gi-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
   text-align: center;
-  color: #222;
+}
+
+.gi-title {
+  font-size: 52px;
+  font-weight: bold;
   margin-bottom: 15px;
-  /* margin-left: 312px; */
-  
-}
+    font-weight: 400;
+    font-family: 'Bebus Neue';
+  }
 
-.get-involved-main{
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  text-align: left;
-  padding: 2vw 8vw;
-  gap: 20px;
-}
-
-.get-involved-text {
-  font-size: 28px;
+.text {
+  font-size: 24px;
   color: #444;
+  margin: 20px 0;
   text-align: left;
-  line-height: 1.6;
-  /* padding-left: 285px; */
-  line-height: 32px;
-  word-spacing: 5px;
-  /* width: 1200px; */
 }
 
-.get-involved-list {
-  font-size: 28px;
-  color: #444;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  /* line-height: 38.87px; */
-  margin-bottom: 10px;
-  /* margin-left: 302px; */
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gi-title {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Bebus Neue';
+  }
 
-.get-involved-list p {
-  /* margin: 10px 40px; */
-  line-height: 32px;
-  word-spacing: 10px;
-}
-
-@media (max-width: 1000px) {
-  .get-involved-main{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    text-align: left;
-    padding: 20px;
-    gap: 20px;
-  }
-  
-  .get-involved-text {
-    font-size: 20px;
-    color: #444;
-    text-align: left;
-    line-height: 1.6;
-    /* padding-left: 285px; */
-    line-height: 25px;
-    word-spacing: 5px;
-    /* width: 1200px; */
-  }
-  .get-involved-list {
-    font-size: 18px;
-    color: #444;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    /* line-height: 38.87px; */
-    margin-bottom: 10px;
-    /* margin-left: 302px; */
-  }
-  .get-involved-list p {
-    /* margin: 10px 40px; */
-    font-size: 18px;
-    line-height: 25px;
-    word-spacing: 10px;
+  .text {
+    font-size: 24px;
   }
 }
-

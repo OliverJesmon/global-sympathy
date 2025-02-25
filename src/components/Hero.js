@@ -17,7 +17,6 @@ function Hero({ text1, text2 }) {
               {text1}
               <br />
             </span>
-
             <span className="span">{text2}</span>
           </p>
         </div>

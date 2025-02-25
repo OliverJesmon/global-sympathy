@@ -4,6 +4,7 @@ import Impact from "../components/Impact";
 import "../components/styles/Education.css";
 import Workinfo from "../components/Workinfo";
 import Children from "../images/children.png";
+import HealthcareImage from "../images/mother.png";
 import './healthcare.css';
 
 
@@ -31,6 +32,13 @@ export default function Education(){
          </p>
          
          </div> */}
+         <div className="healthcare-image-container">
+        <img 
+          src={HealthcareImage} 
+          alt="Healthcare Info" 
+          className="healthcare-image" 
+        />
+      </div>
          <CSR title="Donate For Healthcare"/>
         </>
     );

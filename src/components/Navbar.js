@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../images/logo.png";
+import NavbarShrink from "./NavbarShrink";
 import "./Navbar.css";
 
 function Navbar() {
@@ -10,6 +11,7 @@ function Navbar() {
   const [desktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
   const mobileMenuRef = useRef(null);
+ 
 
   // Unified click outside handler for both desktop dropdown and mobile menu
   useEffect(() => {
@@ -38,6 +40,7 @@ function Navbar() {
   return (
     <div className="global-nav-navbar">
       <div className="global-nav-navbar-inner">
+        <NavbarShrink />
         {/* Logo */}
         <div className="global-nav-logo-container">
           <img
@@ -52,7 +55,7 @@ function Navbar() {
         <div className="global-nav-desktop-nav">
           <div className="global-nav-nav-links">
             <Link to="/about" className="global-nav-nav-link">
-              ABOUT
+              ABOUT US
             </Link>
 
             <div className="global-nav-dropdown-container" ref={dropdownRef}>
@@ -93,6 +96,11 @@ function Navbar() {
                   <li>
                     <Link to="/ruraldevelopment" className="global-nav-dropdown-item">
                       Rural Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/disaster" className="global-nav-dropdown-item">
+                      Disaster Relief
                     </Link>
                   </li>
                 </ul>
@@ -207,6 +215,18 @@ function Navbar() {
                         }}
                       >
                         Rural Development
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/disaster"
+                        className="global-nav-mobile-dropdown-item"
+                        onClick={() => {
+                          setMenuOpen(false);
+                          setMobileDropdownOpen(false);
+                        }}
+                      >
+                        Disaster Relief
                       </Link>
                     </li>
                   </ul>

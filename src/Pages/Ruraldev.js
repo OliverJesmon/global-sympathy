@@ -9,7 +9,7 @@ import c from '../images/r3.jpg'; // Third image (bottom)
 const RuralDev = () => {
   return (
     <div className='rural-container'>
-      <h2 className='title'>Rural Development Gallery</h2>
+      <h2 className='ruraldev-title'>Rural Development Gallery</h2>
 
       <div className='image-grid'>
         <div className='top-row'>

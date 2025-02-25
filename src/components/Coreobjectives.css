@@ -42,9 +42,12 @@
 
 .category-title {
   
-  font-weight: bold;
-  font-family: "Bebas Neue", serif;
-}
+    font-weight: bold;
+    font-family: "Bebas Neue", serif;
+    margin-top: -10px; /* Adjust this value to move it closer to the logo */
+  }
+  
+
 
 .category-description {
   text-align: left;
@@ -113,11 +116,13 @@
 
   }
 
-  .categories-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    /* margin: 10px; */
+  .category-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Reduce gap to move the title up */
   }
+  
 
   .category-card {
     margin-left: 30px;

@@ -1,74 +1,132 @@
-import React, { useEffect, useRef, useState } from "react";
-import "./OurImpact.css";
+import React, { useEffect, useState, useRef } from "react";
+import './styles/compStyle.css';
 
-const statsData = [
-  { finalNumber: 35, suffix: "+", label: "THOUSAND", description: "children and their families are impacted" },
-  { finalNumber: 300, suffix: "+", label: "VILLAGES", description: "and slums are reached out to across" },
-  { finalNumber: 550, suffix: "+", label: "PROJECTS", description: "focused on education, healthcare, and women empowerment" },
-  { finalNumber: 5, suffix: "+", label: "STATES", description: "are reached including the remotest areas" }
-];
+const Counter = ({ end, triggerCount, formatTwoDigits }) => {
+  const start = Math.floor(end / 2);
+  const [count, setCount] = useState(start);
 
-const OurImpact = () => {
-  return (
-    <div className="Project-impact-container">
-      <h2 className="Project-impact-title">OUR IMPACT</h2>
-      <div className="stats-container">
-        {statsData.map((stat, index) => (
-          <StatCard key={index} stat={stat} />
-        ))}
-      </div>
-    </div>
-  );
+  useEffect(() => {
+    if (!triggerCount) return;
+
+    let current = start;
+    const stepTime = 30;
+    const totalSteps = 50;
+    const increment = (end - start) / totalSteps;
+
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= end) {
+        setCount(end);
+        clearInterval(timer);
+      } else {
+        setCount(Math.floor(current));
+      }
+    }, stepTime);
+
+    return () => clearInterval(timer);
+  }, [end, triggerCount]);
+
+  return <h3 style={styles.number}>{formatTwoDigits ? count.toString().padStart(2, '0') : count}+</h3>;
 };
 
-const StatCard = ({ stat }) => {
-  const [count, setCount] = useState(0);
-  const ref = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
+const OurImpact = () => {
+  const [triggerCount, setTriggerCount] = useState(false);
+  const impactRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
+          setTriggerCount(false); // Reset before triggering
+          setTimeout(() => setTriggerCount(true), 100); // Small delay to restart animation
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (impactRef.current) {
+      observer.observe(impactRef.current);
     }
+
+    return () => {
+      if (impactRef.current) observer.unobserve(impactRef.current);
+    };
   }, []);
 
-  useEffect(() => {
-    if (!isVisible) return;
-
-    let start = 0;
-    const end = stat.finalNumber;
-    const duration = 2000;
-    const incrementTime = 50;
-    const step = Math.ceil((end - start) / (duration / incrementTime));
-
-    const timer = setInterval(() => {
-      start += step;
-      if (start >= end) {
-        start = end;
-        clearInterval(timer);
-      }
-      setCount(start);
-    }, incrementTime);
-
-    return () => clearInterval(timer);
-  }, [isVisible, stat.finalNumber]);
-
   return (
-    <div className="stat-card" ref={ref}>
-      <h3 className="stat-number">{count}{stat.suffix}</h3>
-      <p className="stat-label">{stat.label}</p>
-      <p className="stat-description">{stat.description}</p>
+    <div style={styles.container} ref={impactRef}>
+      <h2 style={styles.title}>OUR IMPACT</h2>
+      <div style={styles.statsContainer}>
+        <div style={styles.stat}>
+          <Counter end={35} triggerCount={triggerCount} />
+          <p style={styles.subText}>THOUSAND</p>
+          <p style={styles.description}>
+            children and their families are impacted
+          </p>
+        </div>
+        <div style={styles.stat}>
+          <Counter end={300} triggerCount={triggerCount} />
+          <p style={styles.subText}>VILLAGES</p>
+          <p style={styles.description}>and slums are reached out to across</p>
+        </div>
+        <div style={styles.stat}>
+          <Counter end={550} triggerCount={triggerCount} />
+          <p style={styles.subText}>PROJECTS</p>
+          <p style={styles.description}>
+            focused on education, healthcare, and women empowerment
+          </p>
+        </div>
+        <div style={styles.stat}>
+          <Counter end={5} triggerCount={triggerCount} formatTwoDigits={true} />
+          <p style={styles.subText}>STATES</p>
+          <p style={styles.description}>
+            are reached including the remotest areas
+          </p>
+        </div>
+      </div>
     </div>
   );
+};
+
+const styles = {
+  container: {
+    textAlign: "center",
+    padding:"0 120px",
+  },
+  title: {
+    fontSize: "52px",
+    fontFamily: "Bebas Neue",
+    fontWeight: "bold",
+    marginBottom: "20px",
+  },
+  statsContainer: {
+    display: "flex",
+    justifyContent: "space-around",
+    flexWrap: "wrap",
+    padding: "auto",
+  },
+  stat: {
+    flex: "1",
+    minWidth: "180px"
+  },
+  number: {
+    fontSize: "80px",
+    color: "#00A0E3",
+    fontFamily: "Bebas Neue",
+  },
+  subText: {
+    fontSize: "32px",
+    fontWeight: "400",
+    lineHeight: "38.4px",
+    color: "#00A0E3",
+  },
+  description: {
+    fontSize: "20px",
+    fontFamily: "Raleway",
+    fontWeight: "400",
+    lineHeight: "23.48px",
+    textAlign: "center",
+  },
 };
 
 export default OurImpact;

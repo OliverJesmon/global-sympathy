@@ -1,48 +1,4 @@
-/* Newspaper Container */
-.newspaper-container {
-    max-width: 1000px;
-    margin: auto;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  /* First row: Force First.jpg on the left and 1.jpg on the right */
-  .first-row {
-    display: flex;
-    justify-content: space-between; /* Puts one image on each side */
-    gap: 15px;
-  }
-  
-  .first-row img {
-    width: calc(50% - 7.5px); /* Half width with gap */
-    height: auto;
-    display: block;
-  }
-  
-  /* Main Newspaper Grid Layout: 2 images per row */
-  .newspaper-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for all screen sizes */
-    gap: 15px; /* Space between images */
-    margin-top: 15px; /* Ensure space after first row */
-  }
-  
-  .newspaper-image {
-    width: 100%; /* Makes sure image fills the column width */
-    height: auto; /* Keeps the image's aspect ratio intact */
-    display: block;
-    margin-bottom: 15px; /* Space between stacked images */
-    object-fit: contain; /* Ensures images scale without cropping */
-  }
-  
+
   /* Responsive Design for Mobile Devices */
   @media (max-width: 768px) {
     .newspaper-container {
