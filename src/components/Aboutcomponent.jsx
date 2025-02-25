@@ -152,7 +152,7 @@ function Aboutcomponent() {
                 have positively impacted countless lives across India.
               </p>
             </div>
-            <div className="programs-container" ref={ourProgram}>
+            <div className="programs-container">
               <h2 className="programs-title">OUR PROGRAMS</h2>
               <ol className="programs-list">
                 <li>
