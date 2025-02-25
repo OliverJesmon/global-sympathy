@@ -7,7 +7,7 @@ import Tara from "../images/normal/Tara.jpg";
 import "./Aboutcomponent.css";
 function Aboutcomponent() {
   const [isMobile, setIsMobile] = useState(false);
-  const ourProgram=useRef(null);
+
   useEffect(() => {
     const checkMobile = () =>
       setIsMobile(window.matchMedia("(max-width: 1000px)").matches);
