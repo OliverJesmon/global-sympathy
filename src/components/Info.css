@@ -2,8 +2,8 @@
     width: 100%;
     margin-top: -40px;
     max-width: 100%;
-    margin: 0 auto;
-    padding: 100px 120px;
+
+    padding: 50px 120px;
     box-sizing: border-box;
   }
 
@@ -43,6 +43,7 @@
   @media screen and (max-width: 480px) {
     .info-container {
       padding: 24px 12px;
+      margin-bottom: 20px;
     }
     
     .info-text {

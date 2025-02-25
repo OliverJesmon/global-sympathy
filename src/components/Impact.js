@@ -91,7 +91,7 @@ const OurImpact = () => {
 const styles = {
   container: {
     textAlign: "center",
-    padding:"0 120px",
+    padding:"0 100px",
   },
   title: {
     fontSize: "52px",
@@ -102,6 +102,7 @@ const styles = {
   statsContainer: {
     display: "flex",
     justifyContent: "space-around",
+    gap: '20px',
     flexWrap: "wrap",
     padding: "auto",
   },
@@ -117,6 +118,7 @@ const styles = {
   subText: {
     fontSize: "32px",
     fontWeight: "400",
+    fontFamily: 'Bebas Neue',
     lineHeight: "38.4px",
     color: "#00A0E3",
   },

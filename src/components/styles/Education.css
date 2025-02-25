@@ -4,13 +4,14 @@
 
 /* Container for text content */
 .workinfo-container {
-    display: flex;
+    display:flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 1200px; 
-    margin: 0 auto;
-    padding: 0;
+    /* width: 100%;  */
+    /* margin: 20px auto; */
+    padding: 10px;
+    overflow: hidden;
 }
 
 /* Title Styling */
@@ -21,7 +22,6 @@
     margin-top: 20px;
     text-transform: uppercase;
     text-align: center;
-    width: 1200px; /* Matches paragraph width */
   
     padding-bottom: 5px;
     margin-bottom: 0; /* No extra spacing */
@@ -29,14 +29,14 @@
 
 /* Paragraph Styling */
 .workinfo-container p {
-    width: 1200px;
+    
     height: auto;
     line-height: 1.6;
     /*font-size: 16px;*/
     display: flex;
     align-items: center; 
     justify-content: center;
-    text-align: left;
+    text-align: justify;
     padding: 10px;
     margin: 0; /* Removes extra spacing */
     /* Matches dotted border from the screenshot */
@@ -49,7 +49,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 1200px;
     padding: 0;
     margin: 0 auto;
 }
@@ -93,10 +92,13 @@
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
-    .workinfo-container h2,
+  .workinfo-container h2{
+    text-align: center;
+  }
     .workinfo-container p {
-        width: 90%;
-        padding: 10px 20px ;
+        width:100%;
+        /* padding: 10px 20px ; */
+        /* text-align: justify; */
     }
 
     .workinfo-container p{

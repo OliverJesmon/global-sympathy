@@ -26,9 +26,9 @@ export default function Footer() {
           <div className="footer-links">
             <p><Link to='/about' className="footer-link">About</Link></p>
             <p><Link to='/about#ourimpact' className="footer-link">Impact</Link></p>
-            <p><Link to='/about#culturalpreserve' className="footer-link">Our Story</Link></p>
+            <p><Link to='/about#ourStory' className="footer-link">Our Story</Link></p>
             <p><Link to='/about#Coreobjectives' className="footer-link">Our Core Objectives </Link></p>
-            <p><Link to='/about#ourprogram' className="footer-link">Our Programs</Link></p>
+            <p><Link to='/about#ourProgram' className="footer-link">Our Programs</Link></p>
             <p><Link to='/about#GetInvolved' className="footer-link">Get Involved</Link></p>
           </div>
           </div>

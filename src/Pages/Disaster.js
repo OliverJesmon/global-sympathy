@@ -1,8 +1,10 @@
 import React from 'react'
 import Hero from "../components/Hero";
 import Impact from "../components/Impact";
-
+import './Disaster.css'
 import Workinfo from '../components/Workinfo';
+
+
 function Disaster() {
     const Para1="Being a disaster-prone country, India is highly vulnerable to various types of natural calamities due to its geographical positioning. According to the National Disaster Management Authority, Govt. of India, more than 58.6% of the country's landmass is prone to earthquakes and over 12% is prone to floods; close to 5,700kms out of the 7,516kms long coastline is prone to cyclones and tsunamis; while 68% of its cultivable area is prone to droughts which is why disaster preparedness is of utmost importance.";
     const Para2="Disaster risks in India are further compounded by increasing vulnerabilities related to changing demographics, socio-economic conditions- unplanned urbanization, development within high-risk zones, environmental degradation, climate change, and epidemics and pandemics. All these factors have created a situation where disasters seriously threaten the sustainable development of the country, besides innumerable lives and livelihoods.";

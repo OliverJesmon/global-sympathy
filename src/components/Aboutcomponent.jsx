@@ -4,9 +4,12 @@ import Vision from "../images/logo/culturalpresv.jpeg";
 import Mision from "../images/logo/genderjustice.jpg";
 import Ron from "../images/normal/Ron.jpg";
 import Tara from "../images/normal/Tara.jpg";
+
+import { useLocation } from 'react-router-dom';
 import "./Aboutcomponent.css";
 function Aboutcomponent() {
   const [isMobile, setIsMobile] = useState(false);
+ 
 
   useEffect(() => {
     const checkMobile = () =>
@@ -15,9 +18,27 @@ function Aboutcomponent() {
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
-  
+  const location = useLocation();
+
+  useEffect(() => {
+    const scrollToSection = () => {
+      const hash = location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', });
+        }
+      }
+    };
+
+    // Delay scroll to ensure components are rendered
+    const timer = setTimeout(scrollToSection, 500);
+    return () => clearTimeout(timer);
+  }, [location]); 
   return (
     <>
+    <center><h2 className='info-title'>Our Story</h2></center>
+
       <div className="vision-mission-container">
         <div className="section">
           <div className="text">
@@ -49,13 +70,14 @@ function Aboutcomponent() {
       <div
         className="objective-container"
         style={{ margin: isMobile ? 0 : 80, padding: isMobile ? 40 : 0 }}
+        id='Coreobjectives'
       >
-        <center>
-          <h2>OUR CORE OBJECTIVES</h2>
+        <center >
+          <h2 >OUR CORE OBJECTIVES</h2>
         </center>
         <div>
-          <p style={styles.content}>
-            <span style={styles.bold}>Education:</span> Promote Earning And
+          <p style={styles.content} >
+            <span style={styles.bold} >Education:</span> Promote Earning And
             Provide Educational Opportunities For Underprivileged Students In
             Rural And Urban Areas.
           </p>
@@ -126,7 +148,7 @@ function Aboutcomponent() {
                 </div>
             <div>
 
-            <div className="impact-container">
+            <div className="impact-container" id='ourimpact'>
               <h2 className="impact-title">OUR IMPACT</h2>
               <p className="impact-text">
                 For over two and a half decades, GSF has been at the forefront
@@ -152,7 +174,7 @@ function Aboutcomponent() {
                 have positively impacted countless lives across India.
               </p>
             </div>
-            <div className="programs-container">
+            <div className="programs-container" id='ourProgram'>
               <h2 className="programs-title">OUR PROGRAMS</h2>
               <ol className="programs-list">
                 <li>
@@ -181,7 +203,7 @@ function Aboutcomponent() {
                 </li>
               </ol>
             </div>
-            <div className="gi-container">
+            <div className="gi-container" id='GetInvolved'>
               <h2 className="gi-title">GET INVOLVED</h2>
               <p className="text">
                 Join us in our mission to create a better world. Here's how you
@@ -219,7 +241,7 @@ const styles = {
     
   },
   content: {
-    margin: "20px 0",
+    margin: "20px 28px",
     fontSize: "24px",
     lineHeight: "1.6",
   },

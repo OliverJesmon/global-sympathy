@@ -41,13 +41,10 @@
 }
 
 .category-title {
-  
-    font-weight: bold;
-    font-family: "Bebas Neue", serif;
-    margin-top: -10px; /* Adjust this value to move it closer to the logo */
-  }
-  
-
+  font-weight: bold;
+  font-family: "Bebas Neue", serif;
+  margin-top: -10px; /* Adjust this value to move it closer to the logo */
+}
 
 .category-description {
   text-align: left;
@@ -62,22 +59,29 @@
   margin: 52px;
 }
 
-
+.sdg-title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38.4px;
+  
+}
 
 .sdg-subtitle {
-  font-size: 35px;
+  font-size: 52px;
   color: #333;
-  margin-bottom: 20px;
+  font-weight: 400;
+  margin-bottom: 26px;
+  line-height: 62.4px;
+  
 }
 
 .sdg-container {
   display: flex;
-  /* grid-template-columns: repeat(3, 1fr); */
-  
-  justify-content: center;
+  justify-content: flex-start; /* Align to the left */
   align-items: center;
-  gap: 15px;
-  margin: 20px 240px;
+  gap: 45px; /* Keep the spacing */
+  margin: 20px 100px; /* Center the container within its parent */
+  max-width: 90%; /* Adjust width to fit within the section */
 }
 
 .sdg-card {
@@ -100,20 +104,16 @@
 }
 
 /* Responsive design for mobile */
-@media (max-width: 1000px) {
-  .core-objectives {
+@media (max-width: 768px) {
+  /* .core-objectives {
     width: 100%;
-    /* margin: auto; */
-
-    /* padding: 30px; */
-  }
+  } */
 
   .Categories-container{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-left: -30px;
-
   }
 
   .category-content {
@@ -122,7 +122,6 @@
     align-items: center;
     gap: 5px; /* Reduce gap to move the title up */
   }
-  
 
   .category-card {
     margin-left: 30px;
@@ -130,9 +129,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* gap: 50px; */
   }
 
+  
   .category-icon {
     width: 170px;
   }
@@ -152,6 +151,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 10px;
+    gap: 10px;
   }
 
   .sdg-card {
@@ -166,6 +166,6 @@
   .sdg-title,
   .sdg-subtitle {
     font-size: 36px;
-    line-height: 40px;
+    line-height: 38.4px;
   }
 }

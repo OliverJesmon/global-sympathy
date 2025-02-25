@@ -9,7 +9,7 @@ function About() {
   return (
     <>
     <Hero text1="Real Work. Real Change" />
-    <center><h2 className='info-title'>Our Story</h2></center>
+
     <Impact />
     
     <Info />
