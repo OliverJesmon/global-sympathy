@@ -164,6 +164,8 @@ function Aboutcomponent() {
                 <br />
                 <li>-Disaster Risk Management And Relief</li>
                 <br />
+                <br />
+                <br />
                 <li>-Water And Sanitation Initiatives</li>
                 <br />
                 <li>-Gender Justice And Social Welfare</li>
@@ -174,8 +176,8 @@ function Aboutcomponent() {
                 have positively impacted countless lives across India.
               </p>
             </div>
-            <div className="programs-container" id='ourProgram' >
-              <h2 >OUR PROGRAMS</h2>
+            <div className="programs-container" id='ourProgram'>
+              <h2>OUR PROGRAMS</h2>
               <ol className="programs-list">
                 <li>
                   Education For All: Scholarships, Educational Materials, And
