@@ -1,0 +1,76 @@
+/* Container styles */
+.gallery-categories-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Keep 2 columns on desktop */
+  column-gap: 30px;
+  row-gap: 30px;
+  padding: 60px;
+  max-width: 1000px;
+  margin: 0 auto; /* Center the container */
+  }
+  
+  /* Card styles */
+  .gallery-category-card {
+    position: relative;
+  width: 100%;
+  height: 500px; /* Maintain height on desktop */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Zoom effect using easyzoomin */
+  .gallery-category-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Overlay styles */
+  .overlay {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Text styles */
+  .gallery-category-card h3 {
+    position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 52px;
+  margin: 0;
+  padding: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .categories-container {
+        grid-template-columns: repeat(1, 1fr); /* Switch to single column */
+        row-gap: 15px;
+    }
+  
+    .gallery-category-card {
+      height: 300px; /* Reduce card height for smaller screens */
+    font-size: 48px; /* Maintain a responsive aspect ratio */
+    }
+  
+    .gallery-category-card h3 {
+      font-size: 32px; /* Slightly smaller font for mobile */
+    }
+  }
+  
+
+  

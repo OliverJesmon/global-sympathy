@@ -1,0 +1,117 @@
+/* Desktop Styles */
+.corporate-support-container {
+  padding: 5vw 8vw;
+  width: 100%;
+  margin: 0;
+
+}
+
+.corporate-support-wrapper {
+  display: flex !important;
+  justify-content: space-between !important; 
+  align-items: center !important;
+  /* gap: auto; */
+}
+
+.corporate-donation-btn {
+    width: fit-content;
+     padding: 10px 20px; 
+  background-color: #00a0e3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.corporate-donation-btn:hover {
+  background-color: #0088c3;
+}
+
+.corporate-donation-btn-lg {
+  width: fit-content;
+  height: 68px;
+  border-radius: 16px;
+  font-size: 24px;
+  line-height: 28.18px;
+}
+
+.corporate-info-container {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: start;
+  margin-top: -25px;
+  line-height: 40px;
+}
+
+.corporate-info-heading {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.corporate-info-subheading {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.corporate-info-contact {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* .corporate-support-container {
+      padding: 40px 70px;
+    } */
+
+  .corporate-support-wrapper-button-div{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .corporate-support-wrapper {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .corporate-donation-btn-lg {
+    width: fit-content;
+    height: 60px;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 500;
+  }
+
+  .corporate-info-container {
+    margin-left: 0;
+    width: fit-content;
+    margin-top: 0;
+    line-height: 30px;
+  }
+
+  .corporate-info-heading {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 17px;
+    /* text-align: center; */
+  }
+
+  .corporate-info-subheading {
+    font-size: 16px;
+    padding-left: 17px;
+  }
+
+  .corporate-info-contact {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 50px;
+    padding-left: 17px;
+  }
+}

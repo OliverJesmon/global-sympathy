@@ -1,0 +1,62 @@
+/* General container styling */
+.rural-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Title Styling */
+.ruraldev-title {
+  font-size: 28px;
+  font-weight: bold;
+  color:black;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.image-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Top row (2 images side by side) */
+.top-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+/* Bottom row (1 centered image) */
+.bottom-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Image Styling */
+.image-grid img {
+  max-width: 470px;
+  width:100%;
+  height: auto;
+  border-radius: 8px;
+ 
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-grid img {
+    max-width: 90%;
+  }
+}

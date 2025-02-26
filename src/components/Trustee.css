@@ -1,0 +1,185 @@
+
+   .vision-mission-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 0;
+    padding-right: 4vw;
+    align-items: center;
+    text-align: left;
+    font-family: Raleway;
+    /* gap: 20px; */
+    
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    padding: 20px;
+    margin-left: 75px;
+  }
+  .our-vision-mission-title{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .icon{
+    height: 100px;
+    width: 100px;
+  }
+  .trustees {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .trustee-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 2vw 5vw;
+    margin-top: 20px;
+  }
+  
+  .trustee {
+    width: 45%;
+    font-size: 16px;
+    text-align: justify;
+  }
+  .trustee-person-image{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .trustee-image {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .trustee-name {
+    font-weight: bold;
+    font-size: 20px;
+   
+    margin-bottom: 5px;
+  }
+  
+  .trustee-title {
+    font-style: italic;
+    font-size: 26px;
+    margin-bottom: 10px;
+ 
+  }
+  
+  .trustee-description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .objective-container{
+      max-width: "85%";
+      padding: "20px 14px";
+      text-align: "justify";
+      color: "#333";
+      font-family: "Arial, sans-serif";
+      margin-left: "6.25rem";
+  }
+
+@media (max-width: 1000px){
+  .vision-mission-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 -40px;
+    align-items: center;
+    text-align: left;
+    font-family: Raleway;
+    /* gap: 20px; */
+    
+  }
+  .objective-container{
+    /* width: 100%; */
+    margin: 0;
+    padding: 20px;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    /* padding: 20px; */
+    margin-left: 20px;
+  }
+  .our-vision-mission-title{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .icon{
+    height: 100px;
+    width: 100px;
+  }
+  .trustees {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .trustee-container {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .trustee {
+    width: 100%;
+    padding: 20px;
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  .trustee-person-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .trustee-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .trustee-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .trustee-title {
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 10px;
+ 
+  }
+  
+  .trustee-description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: justify;
+  }
+
+}

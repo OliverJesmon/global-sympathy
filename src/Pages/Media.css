@@ -1,0 +1,76 @@
+/* Newspaper Container */
+.newspaper-container {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+/* First row: Force First.jpg on the left and 1.jpg on the right */
+.first-row {
+  display: flex;
+  justify-content: space-between; /* Puts one image on each side */
+  text-align: center;
+  gap: 15px;
+}
+
+.first-row img {
+  width: calc(50% - 7.5px); /* Half width with gap */
+  height: auto;
+  /* display: block; */
+}
+
+/* Main Newspaper Grid Layout: 2 images per row */
+.newspaper-grid {
+  /* display:grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 15px; 
+  margin-top: 15px;  */
+  column-width: 400px;
+}
+
+.newspaper-image {
+  width: 100%;
+  margin: 10px;
+  /* height: auto; 
+  display: block;
+  margin-bottom: 15px; 
+  object-fit: contain;  */
+  /* width: auto; */
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  .newspaper-container {
+    text-align: center; /* Center title */
+    margin: 20px;
+  }
+
+  .first-row {
+    flex-direction: column;
+    align-items: center; /* Center images vertically */
+  }
+
+  .first-row img {
+    width: 100%; /* Ensure images take full width on mobile */
+    margin-bottom: 15px; /* Adds space between stacked images */
+  }
+
+  /* For mobile devices: switch to 1 column */
+  .newspaper-grid {
+    grid-template-columns: 1fr; /* Switch to 1 column on smaller screens */
+    text-align: center; /* Center images */
+  }
+
+  .newspaper-image {
+    display: block; /* Ensure images are block level for proper alignment */
+  }
+}

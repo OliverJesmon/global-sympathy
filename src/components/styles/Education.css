@@ -1,0 +1,165 @@
+
+/* Reset default margin and ensure consistent box-sizing */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* Container for text content */
+.workinfo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* max-width: 1200px;  */
+    /* margin: 0 auto; */
+    width: 100%;
+    padding: 20px 120px;
+}
+
+/* Title Styling */
+.workinfo-container h2 {
+    font-size: 50px;
+    /* font-weight: bold; */
+    font-family: 'Bebas Neue';
+    margin-top: 20px;
+    /* text-transform: uppercase; */
+    text-align: left;
+    width: 1200px; /* Matches paragraph width */
+  
+    padding-bottom: 5px;
+    margin-bottom: 0; /* No extra spacing */
+}
+
+/* Paragraph Styling */
+.workinfo-container p {
+    width: 100%;
+    height: auto;
+    line-height: 1.6;
+    font-size: 20px;
+    font-family: "raleway";
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: left;
+    padding: 10px;
+    margin: 0; /* Removes extra spacing */
+    /* Matches dotted border from the screenshot */
+}
+
+
+/* Education support section */
+.education-support-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+
+.education-donate-button.large {
+    width: 60vw;
+    height: 68px;
+    border: none;
+    color: white;
+    background-color: #00A0E3;
+    padding: 2px 10px;
+    border-radius: 16px;
+    font-size: 18px;
+    margin-left: 70px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    line-height: 28.18px;
+  }
+
+/* Image Styling */
+.education-support-image {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fixing button and text alignment */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .workinfo-container h2,
+    .workinfo-container p {
+        width: 96%;
+    }
+    .workinfo-container{
+      padding: 10px 24px;
+    
+    }
+    .workinfo-container p{
+        font-size: 20px;
+        text-align: start;
+        margin: 10px;
+    }
+
+    .workinfo-container h2{
+        font-size: 36px;
+        font-weight: 200;
+    }
+
+    .content-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .csr-section {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      
+      .csr-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+    .education-donate-button.large {
+        width: 60vw;
+        height: 68px;
+        border: none;
+        color: white;
+        background-color: #00A0E3;
+        padding: 2px 10px;
+        border-radius: 16px;
+        font-size: 18px;
+        margin-left: 70px;
+        margin-top: -30px;
+        margin-bottom: 30px;
+        line-height: 28.18px;
+      }
+      .education.info{
+        height: auto;
+        width: 90%;
+        padding: 2vw;
+        background-color: red;
+      }
+      .csr-education.info p{
+        font-size: 20px;
+      }
+      .csr-education.title{
+        font-size: 14px;
+      }
+}
+
+

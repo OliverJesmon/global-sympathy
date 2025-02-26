@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: auto;
+
+}
+.about-title {
+  font-size: 52px;
+  font-family: "Bebas Neue",sans-serif;
+  font-weight: bold;
+  margin-top: 70px;
+}
+
+
+/* {
+  font-family: 'Bebas Neue';
+  
+} */
+h2, h3{
+  font-family: 'Bebas Neue';
+  font-size: 50px;
+}
+/* body {
+} */
+
+
+
+/* Read More Link Styling - Simple Text Link */
+.read-more-link {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  color:rgba(0, 160, 227, 1);
+  text-decoration: none;
+  margin-top: -30px;
+  transition: color 0.3s ease-in-out;
+}
+
+.read-more-link:hover {
+  color: #0056b3; /* Darker shade on hover */
+  text-decoration: underline;
+}
+
+
+.text-wrapper1 {
+  text-align: center;
+}

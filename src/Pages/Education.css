@@ -1,0 +1,57 @@
+/* General container styling */
+.edu-gallery-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Title Styling */
+  .edu-gallery-title {
+    font-size: 28px;
+    font-weight: bold;
+    color:black;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid Layout for Images (2 per row) */
+  .edu-grid-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Row to hold 2 images */
+  .edu-grid-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  /* Image Styling */
+  .edu-grid-item {
+    width: 100%;
+    max-width: 470px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .edu-grid-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .edu-grid-item {
+      max-width: 90%;
+    }
+  }
+  

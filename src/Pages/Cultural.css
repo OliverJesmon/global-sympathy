@@ -1,0 +1,58 @@
+.cultural-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Desktop view: 2 images per row */
+.desktop-view {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* Mobile view: 1 image per row */
+.mobile-view {
+  display: none;
+}
+
+/* Styling for images */
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Center the last image in desktop view */
+.grid-item.centered {
+  display: flex;
+  justify-content: center;
+  grid-column: span 2;
+}
+
+.grid-item.centered img {
+  width: auto;
+  height: auto;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .desktop-view {
+      display: none;
+      
+  }
+  
+  .mobile-view {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin:20px;
+  }
+}

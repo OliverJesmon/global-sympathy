@@ -1,0 +1,103 @@
+
+.impact-container {
+    background-color: #ffffff;
+    padding: 2vw 7.5vw;
+    /* padding: px; */
+    /* max-width: 800px; */
+    /* margin: 40px auto;
+    text-align: center; */
+    line-height: 1;
+    font-family: Raleway;
+}
+
+.impact-title {
+    font-size: 52px;
+    /* font-weight: bold; */
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+}
+
+.impact-text {
+    font-size: 28px;
+    font-weight: 500;
+    color: #3D3737;
+    margin-bottom: 20px;
+    line-height: 1;
+    text-align: left;
+    overflow-y: hidden;
+}
+
+.impact-list {
+    list-style-type: none; 
+    padding:  0 150px;
+    text-align: left;
+    display: inline-block; 
+}
+
+.impact-list li {
+    font-size: 20px;
+    color: #3D3737;
+    padding: 8px 0; 
+}
+.impact-footer {
+    overflow-y: hidden;
+   font-size: 24px;
+    margin-top: 20px;
+    text-align: left; 
+}
+
+@media (max-width: 1000px){
+    .impact-container {
+        background-color: #ffffff;
+        /* padding: 2vw 7.5vw; */
+        /* padding: px; */
+        /* max-width: 800px; */
+        /* margin: 40px auto;
+        text-align: center; */
+        line-height: 10px;
+        font-family: Raleway;
+    }
+    
+    .impact-title {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .impact-text {
+        font-size: 18px;
+        font-weight: 500;
+        color: #3D3737;
+        margin-bottom: 20px;
+        line-height: 1.2;
+        text-align: left;
+    }
+    
+    .impact-list {
+        list-style-type: none; 
+        padding: 10px;
+        margin: 0;
+        text-align: left;
+        display: inline-block; 
+    }
+    
+    .impact-list li {
+        font-size: 16px;
+        line-height: 15px;
+        color: #3D3737;
+        /* padding: 8px 0;  */
+    }
+    .impact-footer {
+       font-size: 18px;
+        margin-top: 20px;
+        line-height: 25px;
+        text-align: left; 
+    }
+}

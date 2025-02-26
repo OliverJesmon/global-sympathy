@@ -1,0 +1,88 @@
+.healthcare-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Container for the healthcare image */
+.healthcare-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Fixed issue: width should be 100% */
+    max-width: 1200px; /* Increased max-width for larger screens */
+    margin: auto;
+    background: transparent;
+}
+
+/* Styling for the healthcare image */
+.healthcare-image {
+    width: 100%; /* Ensures responsiveness */
+    max-width: 1000px; /* Adjusted max-width */
+    height: auto; /* Maintains aspect ratio */
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+/* Desktop view: 2 images per row */
+.desktop-view {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Mobile view: 1 image per row */
+.mobile-view {
+    display: none;
+}
+
+/* Styling for images */
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Center the last image in desktop view */
+.grid-item.centered {
+    display: flex;
+    justify-content: center;
+    grid-column: span 2;
+}
+
+.grid-item.centered img {
+    width: auto;
+    height: auto;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .desktop-view {
+        display: none;
+    }
+    
+    .mobile-view {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding-left: 20px;
+        margin: 20px;
+    }
+
+    .healthcare-image-container {
+        max-width: 100%; /* Ensures the container takes full width */
+        padding: 0 10px; /* Adds small padding to prevent touching screen edges */
+    }
+
+    .healthcare-image {
+        width: 100%; /* Ensures it resizes properly */
+        max-width: 100%; /* Prevents any fixed size issues */
+    }
+}
