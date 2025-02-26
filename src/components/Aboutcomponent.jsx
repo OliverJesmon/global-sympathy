@@ -177,7 +177,7 @@ function Aboutcomponent() {
               </p>
             </div>
             <div className="programs-container" id='ourProgram'>
-              <h2>OUR PROGRAMS</h2>
+              <h2 >OUR PROGRAMS</h2>
               <ol className="programs-list">
                 <li>
                   Education For All: Scholarships, Educational Materials, And

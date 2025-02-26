@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from "prop-types";
 import "./Hero.css";
 
@@ -24,3 +23,7 @@ Hero.propTypes = {
   text2: PropTypes.string,
   img: PropTypes.string,
 };
+Hero.defaultProps=
+{
+  img:'https://res.cloudinary.com/dtoatvbkq/image/upload/v1740574481/mainsection_jsvwyj.jpg'
+}

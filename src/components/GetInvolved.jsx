@@ -6,7 +6,7 @@ const GetInvolved = () => {
     <div className="gi-container">
       <h2 className="gi-title">GET INVOLVED</h2>
     <div className="gi-text-p">
-      <p className="text">
+      <p className="gi-text-p">
         Join us in our mission to create a better world. Here's how you can help:
       </p>
       <p className="gi-text-p"><strong>Donate:</strong> Your contributions can make a difference.</p>

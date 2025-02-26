@@ -221,7 +221,7 @@
   margin: 10px 0;
   font-weight: bold;
   font-size: 14px; /* Decreased font size */
-  color: black
+  color: black;
   text-transform: uppercase;
   display: flex;
   align-items: center;
